@@ -28,8 +28,6 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 **[booksService]**
 
-1. getBook() : 책 상세 정보 호출
+1. findById() : 책 존재 여부 확인 후 책 상세 정보 호출
 
-2. findById() : 책 존재 여부
-
-2. recommendBooks() : 추천할 책 목록 호출
+1. recommendBooks() : 추천할 책 목록 호출
