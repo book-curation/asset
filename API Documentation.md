@@ -6,7 +6,7 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 ### User API 설계
 
-**[userService]**
+**[usersService]**
 
 1. isIdExist() : 아이디 중복확인
 
@@ -23,3 +23,11 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 6. delete() : 유저 삭제 = 회원 탈퇴
 
+
+### Book API 설계
+
+**[booksService]**
+
+1. getBook() : 책 정보 호출
+
+2. recommendBooks() : 추천할 책 호출
