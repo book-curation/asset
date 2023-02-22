@@ -64,3 +64,14 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 1. delete() : phrase 삭제
 
 1. recommendPhrase() : phrase 추천 목록
+
+
+
+### Hashtag API 설계
+
+**API 설계**
+
+**[hashtagService]**
+
+1. create() : hashtag 생성(생성시 
+
