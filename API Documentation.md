@@ -73,5 +73,7 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 **[hashtagService]**
 
-1. create() : hashtag 생성(생성시 
+1. create() : hashtag 생성(생성시 book, user랑 연결되어야함), 중복 생성 x
+
+2. getHashtagByBookId() : bookId로 책에 달린 해시태그 전부 불러오기
 
