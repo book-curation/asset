@@ -85,8 +85,9 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 2. delete
   - hashtag 존재여부
-  - userId 검증
-  - 후 삭제 처리
+  - ~~userId 검증~~
+  - 사용자가 작성한 hashtag 삭제 처리
+  - hashtag에 연결된 user가 0일 경우 hashtag 삭제
 
 **[hashtagService]**
 
@@ -96,6 +97,8 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 1. findById() : hashtag id 존재 여부 확인 후 hashtag 정보 호출
 
-1. checkUserId() : user id 일치 여부 (hashtag 작성한 사람이 맞는지 확인)
+1. ~~checkUserId() : user id 일치 여부 (hashtag 작성한 사람이 맞는지 확인)~~
 
-1. delete() : hashtag 삭
+1. delete() : hashtag 삭제
+
+1. deleteHashtagByUser() : 사용자가 작성한 hashtag 삭제
