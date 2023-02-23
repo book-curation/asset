@@ -26,11 +26,19 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 ### Book API 설계
 
+**API 설계**
+
+1. getBookByHashtagId()
+  - hashtagId 존재 여부 확인 : hashtag service의 findbyid()
+  - hashtagId로 hashtag-book 매핑테이블에서 bookId 받고 book 정보 호출
+
 **[booksService]**
 
 1. findById() : 책 존재 여부 확인 후 책 상세 정보 호출
 
 1. recommendBooks() : 추천할 책 목록 호출
+
+1. getBookByHashtagId() : hashtag id로 book list 전부 호출
 
 
 ### Phrase API 설계
@@ -71,9 +79,23 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 
 **API 설계**
 
+1. get hashtag by book id
+  - BookId 존재 여부 확인 : Book service의 findby
+  - bookId로 book entity 통해서 hashtag-book 매핑테이블 통해서 hashtag 정보 받아오기 -> hashtag 가져오기
+
+2. delete
+  - hashtag 존재여부
+  - userId 검증
+  - 후 삭제 처리
+
 **[hashtagService]**
 
 1. create() : hashtag 생성(생성시 book, user랑 연결되어야함), 중복 생성 x
 
-2. getHashtagByBookId() : bookId로 책에 달린 해시태그 전부 불러오기
+1. getHashtagByBookId() : bookId로 책에 달린 해시태그 전부 불러오기
 
+1. findById() : hashtag id 존재 여부 확인 후 hashtag 정보 호출
+
+1. checkUserId() : user id 일치 여부 (hashtag 작성한 사람이 맞는지 확인)
+
+1. delete() : hashtag 삭
