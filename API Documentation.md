@@ -102,3 +102,32 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 1. delete() : hashtag 삭제
 
 1. deleteHashtagByUser() : 사용자가 작성한 hashtag 삭제
+
+
+### Curation API 설계
+
+**API 설계**
+
+1. create
+  - userId, bookId 각 service의 findById
+  - 생성
+
+1. delete
+  - findById로 찾고
+  - 위 정보랑 userId 매칭 여부 확인
+  - 삭제
+
+**[curationsService]**
+
+1. create() : curation 생성
+
+1. getCurationList() : userId 맞는지 확인 후 호출
+
+1. findById() : curation id로 정보 불러오기
+
+1. update() : curation 업데이트
+
+1. delete() : curation 삭제 
+
+1. recommendCuration() : curation 추천 목록
+
