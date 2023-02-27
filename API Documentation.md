@@ -115,6 +115,7 @@ https://app.gitbook.com/o/axqdgQk3sHmxILfmFEmI/s/apWnuggqW2ZGOpTu8XnG/api/book-c
 1. delete
   - findById로 찾고
   - 위 정보랑 userId 매칭 여부 확인
+  - isPublic으로 공개 여부 확인
   - 삭제
 
 **[curationsService]**
